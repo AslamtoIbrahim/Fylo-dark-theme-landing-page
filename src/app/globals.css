@@ -3,11 +3,29 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+  /* --font-open: var(--font-open-sans); */
+  --font-open: "Open Sans", serif;
+
+  /* color */
+  --color-pink: hsl(322, 100%, 66%);
+  --color-very-pale-cyan: hsl(193, 100%, 96%);
+  --color-very-dark-cyan: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(208, 11%, 55%);
+
+  /* background image */
+  --background-image-hero-mo: url('../../public/sources/images/bg-hero-mobile.svg');
+  --background-image-hero-de: url('../../public/sources/images/bg-hero-desktop.svg');
+}
+
+.example {
+  background-image: url('../../public/sources/images/bg-hero-desktop.svg') ;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --example: hsl(192, 100%, 9%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +36,9 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18;
+}
+
+.padding{
+  @apply py-4 px-4
 }
