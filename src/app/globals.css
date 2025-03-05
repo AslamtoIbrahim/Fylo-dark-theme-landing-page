@@ -42,3 +42,11 @@ body {
 .padding{
   @apply py-4 px-4
 }
+
+.shadow{
+   box-shadow: 1px 1px 4px 1px #00252e18;
+}
+
+.icon {
+  @apply flex items-center justify-center w-7 h-7 p-1 border-white border-[1px] rounded-full;
+}
