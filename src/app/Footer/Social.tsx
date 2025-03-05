@@ -5,7 +5,7 @@ import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-sv
 
 const Social = () => {
   return (
-    <div className='flex flex-col items-center gap-4'>
+    <div className='flex flex-col items-center gap-4 lg:gap-16'>
       <section className='w-full mt-12 flex justify-center gap-4  '>
       <FontAwesomeIcon icon={faFacebookF} className='icon' />  
       <FontAwesomeIcon icon={faTwitter} className='icon' />  

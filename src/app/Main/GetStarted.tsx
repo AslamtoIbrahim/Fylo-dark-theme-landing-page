@@ -6,7 +6,7 @@ type prop = {
 const GetStarted = ({styles}:prop) => {
   return (
     <button className={`w-full bg-pink text-white text-sm px-4 py-3 rounded-full font-open
-      shadow-xl cursor-pointer hover:opacity-80 ${styles}`}>
+      shadow-xl cursor-pointer hover:opacity-80 md:w-fit md:px-12 lg:px-16 ${styles}`}>
         Get Started For Free
     </button>
   )

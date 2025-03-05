@@ -4,10 +4,10 @@ import Card from './Card'
 
 const Features = () => {
   return (
-    <div className='px-4 py-16 flex flex-col gap-8'>
+    <div className='px-4 md:px-8 lg:px-12 py-16 flex flex-col gap-8'>
       {
         data.map((feature, index) => (
-           <Card key={index} component={feature} />
+           <Card key={index} component={feature} index={index} />
         ))
       }
     </div>

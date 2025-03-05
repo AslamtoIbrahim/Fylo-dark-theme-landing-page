@@ -48,5 +48,10 @@ body {
 }
 
 .icon {
-  @apply flex items-center justify-center w-7 h-7 p-1 border-white border-[1px] rounded-full;
+  @apply flex items-center justify-center w-7 h-7 p-1 border-white border-[1px] rounded-full
+  hover:text-pink hover:border-pink;
+}
+
+.line{
+  @apply hover:underline whitespace-nowrap px-8
 }
