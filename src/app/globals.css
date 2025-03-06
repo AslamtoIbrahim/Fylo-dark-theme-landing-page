@@ -6,10 +6,27 @@
 }
 
 @theme inline {
+  /* colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* Primary Colors */
+  --color-primary-intro-bg: hsl(217, 28%, 15%);
+  --color-primary-main-bg: hsl(218, 28%, 13%);
+  --color-primary-footer-bg: hsl(216, 53%, 9%);
+  --color-primary-testimonials-bg: hsl(219, 30%, 18%);
+
+  /* Accent Colors */
+  --color-accent-cyan: hsl(176, 68%, 64%);
+  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-accent-error: hsl(0, 100%, 63%);
+
+  /* font */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif; */
+  --font-raleway: var(--font-raleway);
+  --font-open-sans: var(--font-open-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +37,5 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   font-size: 0.875rem;
 }
