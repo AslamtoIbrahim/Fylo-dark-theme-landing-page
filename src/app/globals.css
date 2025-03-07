@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --curvy-mb: url("../../public/source/images/bg-curvy-mobile.svg");
+  --curvy-dt: url("../../public/source/images/bg-curvy-desktop.svg");
+  --quote: url("../../public/source/images/bg-quotes.png");
 }
 
 @theme inline {
@@ -27,6 +30,14 @@
   --font-open-sans: "Open Sans", sans-serif; */
   --font-raleway: var(--font-raleway);
   --font-open-sans: var(--font-open-sans);
+  /* bg-image */
+  --background-image-curvy-mb: var(--curvy-mb);
+  --background-image-curvy-dt: url("../../public/source/images/bg-curvy-desktop.svg");
+  --background-image-grad: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +48,62 @@
 }
 
 body {
-   font-size: 0.875rem;
+  font-size: 0.875rem;
+}
+
+.ex {
+  background-image: url("../../public/source/images/bg-curvy-desktop.svg");
+  background-image: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+}
+.padx {
+  @apply px-4;
+}
+
+.link {
+  @apply text-white font-raleway hover:underline;
+}
+
+.bgd {
+  background: var(--curvy-mb),
+    linear-gradient(to top, hsl(218, 28%, 13%) 39%, hsl(217, 28%, 15%) 28%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: 768px) {
+    background: var(--curvy-dt),
+      linear-gradient(to top, hsl(218, 28%, 13%) 39%, hsl(217, 28%, 15%) 28%);
+    background-repeat: no-repeat;
+
+  }
+}
+
+
+.under{
+  @apply relative after:absolute after:-bottom-1 after:left-0 after:content-[''] after:w-full after:h-[1px] after:bg-accent-cyan
+}
+
+.quote{
+  background-image: var(--quote);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: top 1.5rem left 2.5rem ;
+
+}
+
+.shad{
+  box-shadow: 6px 4px 7px 2px #0b1523;
+}
+
+.lin{
+  @apply hover:underline  
+}
+
+.icon {
+  @apply flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10 p-1 border-white border-[1px] rounded-full
+  hover:text-accent-cyan hover:border-accent-cyan cursor-pointer text-white
 }
