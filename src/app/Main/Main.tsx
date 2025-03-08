@@ -7,7 +7,7 @@ import SingUp from './SingUp'
 
 const Main = () => {
   return (
-    <div className=' bg-primary-main-bg  '>
+    <div className=' bg-primary-main-bg '>
       <Intro />
       <Features />
       <Productive />

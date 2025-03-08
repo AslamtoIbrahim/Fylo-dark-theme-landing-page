@@ -60,11 +60,11 @@ body {
   );
 }
 .padx {
-  @apply px-4;
+  @apply px-4 md:px-8 lg:px-16 xl:px-32;
 }
 
 .link {
-  @apply text-white font-raleway hover:underline;
+  @apply text-white font-raleway hover:underline lg:text-lg xl:text-xl;
 }
 
 .bgd {
@@ -73,13 +73,21 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-
+  
   @media (min-width: 768px) {
     background: var(--curvy-dt),
-      linear-gradient(to top, hsl(218, 28%, 13%) 39%, hsl(217, 28%, 15%) 28%);
+    linear-gradient(to top, hsl(218, 28%, 13%) 41%, hsl(217, 28%, 15%) 30%);
     background-repeat: no-repeat;
+    background-position: center center;
 
   }
+  @media (min-width: 1440px) {
+    background: var(--curvy-dt), linear-gradient(to top, #181f2a 28%, #1c2431 44%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
+
 }
 
 
@@ -93,6 +101,12 @@ body {
   background-repeat: no-repeat;
   background-position: top 1.5rem left 2.5rem ;
 
+  @media (min-width: 1024px) {
+    background-position: top 1.5rem left 3.5rem ;
+  }
+  @media (min-width: 1900px) {
+    background-position: 7.5rem 4.5rem;
+  }
 }
 
 .shad{
@@ -100,10 +114,10 @@ body {
 }
 
 .lin{
-  @apply hover:underline  
+  @apply lg:text-xl xl:mx-2 cursor-pointer hover:text-white 
 }
 
 .icon {
-  @apply flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10 p-1 border-white border-[1px] rounded-full
-  hover:text-accent-cyan hover:border-accent-cyan cursor-pointer text-white
+  @apply flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10 p-1 border-white/80 border-[1px] rounded-full
+  hover:text-accent-cyan hover:border-accent-cyan cursor-pointer text-white/80
 }
