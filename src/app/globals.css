@@ -51,14 +51,7 @@ body {
   font-size: 0.875rem;
 }
 
-.ex {
-  background-image: url("../../public/source/images/bg-curvy-desktop.svg");
-  background-image: linear-gradient(
-    to right,
-    hsl(176, 68%, 64%),
-    hsl(198, 60%, 50%)
-  );
-}
+ 
 .padx {
   @apply px-4 md:px-8 lg:px-16 xl:px-32;
 }
